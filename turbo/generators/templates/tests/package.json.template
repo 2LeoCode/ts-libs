@@ -1,0 +1,21 @@
+{
+  "name": "@ts-libs/libs-{{dashCase name}}-tests",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "pnpm start",
+    "lint": "eslint",
+    "clean": "rm -rf dist node_modules"
+  },
+  "devDependencies": {
+    "@ts-libs/configs-typescript": "workspace:*",
+    "@ts-libs/configs-eslint": "workspace:*",
+    "@ts-libs/configs-prettier": "workspace:*",
+    "@types/node": "^20.14.2",
+    "eslint": "^8.56.0",
+    "prettier": "^3.3.1",
+    "typescript": "^5.4.5"
+  }
+}

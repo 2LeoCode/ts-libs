@@ -1,0 +1,26 @@
+{
+  "name": "@ts-libs/libs-errors-common",
+  "version": "0.0.1",
+  "private": true,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "node": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint",
+    "clean": "rm -rf dist node_modules"
+  },
+  "devDependencies": {
+    "@ts-libs/configs-eslint": "workspace:*",
+    "@ts-libs/configs-prettier": "workspace:*",
+    "@ts-libs/configs-typescript": "workspace:*",
+    "eslint": "^8.56.0",
+    "prettier": "^3.3.1",
+    "typescript": "^5.5.2"
+  }
+}

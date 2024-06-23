@@ -1,0 +1,70 @@
+{
+  "name": "ts-libs",
+  "version": "0.0.1",
+  "private": true,
+  "exports": {
+    "./common/errors": {
+      "types": "./libs/errors/common/dist/index.d.ts",
+      "import": "./libs/errors/common/dist/index.js",
+      "node": "./libs/errors/common/dist/index.js",
+      "require": "./libs/errors/common/dist/index.js"
+    },
+    "./common/events": {
+      "types": "./libs/events/common/dist/index.d.ts",
+      "import": "./libs/events/common/dist/index.js",
+      "node": "./libs/events/common/dist/index.js",
+      "require": "./libs/events/common/dist/index.js"
+    },
+    "./common/objects": {
+      "types": "./libs/objects/common/dist/index.d.ts",
+      "import": "./libs/objects/common/dist/index.js",
+      "node": "./libs/objects/common/dist/index.js",
+      "require": "./libs/objects/common/dist/index.js"
+    },
+    "./common/promises": {
+      "types": "./libs/promises/common/dist/index.d.ts",
+      "import": "./libs/promises/common/dist/index.js",
+      "node": "./libs/promises/common/dist/index.js",
+      "require": "./libs/promises/common/dist/index.js"
+    },
+    "./common/results": {
+      "types": "./libs/results/common/dist/index.d.ts",
+      "import": "./libs/results/common/dist/index.js",
+      "node": "./libs/results/common/dist/index.js",
+      "require": "./libs/results/common/dist/index.js"
+    },
+    "./common/streams": {
+      "types": "./libs/streams/common/dist/index.d.ts",
+      "import": "./libs/streams/common/dist/index.js",
+      "node": "./libs/streams/common/dist/index.js",
+      "require": "./libs/streams/common/dist/index.js"
+    },
+    "./common/types": {
+      "types": "./libs/types/common/dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "test": "turbo test",
+    "clean": "turbo clean && rm -rf node_modules .turbo/cache/*",
+    "format": "prettier --write \"**/*.{ts,tsx,svelte,md}\""
+  },
+  "devDependencies": {
+    "@ts-libs/configs-eslint": "workspace:*",
+    "@ts-libs/configs-prettier": "workspace:*",
+    "@ts-libs/configs-typescript": "workspace:*",
+    "@turbo/gen": "^2.0.4",
+    "prettier": "^3.3.1",
+    "turbo": "^2.0.3",
+    "typescript": "^5.5.2"
+  },
+  "packageManager": "pnpm@9.1.1",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "js-convert-case": "^4.2.0"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "@ts-libs/libs-promises-tests",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "pnpm start",
+    "lint": "eslint",
+    "clean": "rm -rf dist node_modules"
+  },
+  "dependencies": {
+    "@ts-libs/libs-promises-common": "workspace:*"
+  },
+  "devDependencies": {
+    "@ts-libs/configs-eslint": "workspace:*",
+    "@ts-libs/configs-prettier": "workspace:*",
+    "@ts-libs/configs-typescript": "workspace:*",
+    "@ts-libs/libs-events-common": "workspace:*",
+    "@types/node": "^20.14.2",
+    "eslint": "^8.56.0",
+    "prettier": "^3.3.1",
+    "typescript": "^5.5.2"
+  }
+}

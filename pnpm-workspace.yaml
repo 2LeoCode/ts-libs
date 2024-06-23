@@ -1,0 +1,6 @@
+packages:
+  - configs/*
+  - libs/*/node
+  - libs/*/common
+  - libs/*/browser
+  - libs/*/tests

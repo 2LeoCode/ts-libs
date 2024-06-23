@@ -1,0 +1,10 @@
+{
+  "extends": "@ts-libs/configs-typescript/base.json",
+  "include": [
+    "turbo/"
+  ],
+  "exclude": [
+    "node_modules",
+    "turbo/generators/templates"
+  ]
+}
