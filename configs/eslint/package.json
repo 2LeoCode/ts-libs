@@ -1,6 +1,6 @@
 {
   "name": "@ts-libs/configs-eslint",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "clean": "rm -rf node_modules dist"
